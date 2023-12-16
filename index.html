@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="stylesheet" href="dist/css/index.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="/images/1131031-84.png">
+    <script type="module" src="JS/login.js" defer></script>
+    <title>Login | Toastit</title>
+</head>
+
+<header>
+    <nav class="navbar navbar-expand navbar-light bg-light border-bottom border-4 mb-3">
+        <img src="../images/1131031-84.png" alt="Toastit-logo" class="ms-4">
+        <a class="navbar-brand ms-4" href="../index.html"><h1>Toastit</h1></a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link fw-semibold" href="feed">Feed</a>
+                </li>
+            </ul>
+        </div>
+        <div class="float-end me-2">
+            <p class="user-name"></p>
+        </div>
+    </nav>
+</header>
+    <body class="bg-dark"></body>
+    
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <img src="images/login-toasters.png" alt="Toasters" class="img-fluid mt-2 rounded">
+            </div>
+            <div class="col-md-6">
+                <div class="card mt-2">
+                    <div class="card-header bg-primary text-white">
+                        Toastit Login
+                    </div>
+                    <div class="card-body">
+                        <form id="login-form" action="/profile" method="get">
+                            <div class="form-group">
+                                <label for="username">Email</label>
+                                <input type="text" class="form-control" id="loginEmail" name="loginEmail" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <input type="password" class="form-control" id="loginPassword" name="loginPassword" required
+                                    minlength="8">
+                            </div>                            
+                            <button type="submit" class="btn btn-primary mt-3">Login</button>
+                            <p>Don't have an account? <a href="register" class="text-danger">Register here</a></p>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-primary text-white text-center py-3 mt-4 fixed-bottom">
+        <div class="container">
+            <p>&copy; 2023 Toastit</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+  <link rel="stylesheet" href="../dist/css/index.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"></script>
+  <link rel="icon" type="image/x-icon" href="/images/1131031-84.png">
+  <script type="module" src="../JS/profile-page.js" defer></script>
+  <title>Profile | Toastit</title>
+</head>
+
+<body class="bg-dark">
+  <nav class="navbar navbar-expand navbar-light bg-light border-bottom border-4 mb-3">
+    <a class="navbar-brand ms-4" href="../feed/index.html"><img src="../images/1131031-84.png" alt="Toastit-logo" class="ms-4"></a>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto flex-column flex-sm-row">      
+        <li>
+          <a class="nav-link fw-semibold logout d-none" href="../index.html">Log out</a>
+        </li>
+      </ul>
+    </div>
+    <div class="float-end me-2">
+      <p class="user-name">User not logged inn</p>
+  </div>
+  </nav>
+  <h1>Profile</h1>
+  <div class="container">
+    <button class="btn btn-success follow-button rounded-pill">Follow</button>
+    <h2 class="text-white">Jedi-toaster</h2>
+    <div class="m-3 text-white">
+      <span class="follow-count">654</span> Followers | <span class="follow-count">75</span> Following
+    </div>
+    <div class="col-12 d-flex flex-column">
+      <div class="card bg-primary text-white m-1 mb-3">
+        <h2>Bio</h2>
+        <img src="../images/profile-pictures/a0d7d86f-9157-4fbe-be40-31e76765585b.png" alt="Profile Image"
+          class="profile-image rounded-circle col-4">
+        <p class="p-3 fw-semibold">He/Toast <br> 🍞🔥 Join me in the toasty world of crisp
+          conversation! I'm your friendly neighborhood toaster enthusiast, The Jedi-toaster! whipping up crispy
+          content one slice at a time. 🍞✨ Whether you prefer your toast lightly tanned or deep, dark, and daring,
+          we're all on this crunchy journey together. Get ready for sizzling discussions, golden puns, and a dash of
+          buttery humor. I toast, you toast, we all toast - because life is too short for soggy bread! <br>
+          #ToastLover #CrispyConversations</p>
+      </div>
+      <div class="card bg-primary text-white m-1 mb-3">
+        <h2 class="text-white">Recent Posts</h2>
+        <div class="card-body">
+          <div class="bg-dark border border-dark border-4 mb-2   d-flex flex-column">
+            <p>24/10/23 ⇧ 145 🗨 66</p>
+            <a href="#" class="text-white">Halloween Toaster </a>
+          </div>
+          <div class="bg-dark border border-dark border-4 mb-2 rounded d-flex flex-column">
+            <p>19/10/23 ⇧ 13 🗨 22</p>
+            <a href="#" class="text-white">Post Title </a>
+          </div>
+        </div>
+      </div>
+      <div class="card bg-primary text-white m-1 mb-3">
+        <h2 class="text-white">Comments</h2>
+        <div class="card-body">
+          <p>"User has posted no comments."</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="bg-primary text-white text-center py-3 mt-4">
+    <div class="container">
+      <p>&copy; 2023 Toastit</p>
+    </div>
+  </footer>
+</body>
+
+</html>
