@@ -1,1 +1,21 @@
+@import "variables.scss";
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
+
+.profile-picture {
+ 
+  max-width: 5rem;
+}
+.profile-pictures {
+  max-width: 50px;
+}
+.profile-image {
+  max-width: 300px;
+  max-height: auto;  
+}
+.card {
+  width: 20rem;
+}
+.post-text{
+  max-height: 70px;
+}

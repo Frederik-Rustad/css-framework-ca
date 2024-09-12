@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../dist/css/index.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <link rel="icon" type="image/x-icon" href="/images/1131031-84.png">
+  <title>Feed page</title>
+</head>
+
+<body class="bg-dark">
+  <nav class="navbar navbar-expand navbar-light bg-light border-bottom border-4 mb-3">
+    <a class="navbar-brand ms-4" href="../index.html"><img src="../images/1131031-84.png" alt="Toastit-logo" class="ms-4"></a>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto flex-column flex-sm-row"> <!-- Add flex-column and flex-sm-row classes -->
+        <li class="nav-item">
+          <a class="nav-link fw-semibold" href="index.html">Feed</a>
+        </li>
+        <li>
+          <a class="nav-link fw-semibold" href="../index.html">Log out</a>
+        </li>
+      </ul>
+    </div>
+    <div class="float-end me-2">
+      <a class="nav-link fw-semibold" href="../profile/index.html"><img src="../images/profile-pictures/a0d7d86f-9157-4fbe-be40-31e76765585b.png"
+        class="profile-picture border border-primary border-4 rounded-circle " title="Profile"></img></a>
+    </div>
+  </nav>
+
+  <div class="input-group mb-3 container">
+    <input type="text" class="form-control rounded-pill m-1" placeholder="🔍" aria-label="Search">
+    <button class="btn btn-outline-secondary rounded-pill m-1" type="button" id="search-button">Search</button>
+  </div>
+<!-- create post dropdown -->
+<div class="container bg-primary text-white rounded mb-4 col-10">
+    <h2>
+        <a data-bs-toggle="collapse" href="#postForm" role="button" aria-expanded="false" aria-controls="postForm" class="text-white text-decoration-none">🍞Create a Post</a>
+    </h2>
+    <div class="collapse" id="postForm">
+        <form>
+            <div class="mb-3">
+                <label for="postTitle" class="form-label">Title</label>
+                <input type="text" class="form-control bg-dark text-white" id="postTitle" name="postTitle" required>
+            </div>
+            <div class="mb-3">
+                <label for="postText" class="form-label">Text (Optional)</label>
+                <textarea class="form-control bg-dark text-white" id="postText" name="postText" rows="4"></textarea>
+            </div>
+            <div class="mb-3">
+                <label for="postImage" class="form-label">Upload Image</label>
+                <input type="file" class="form-control bg-dark text-white" id="postImage" name="postImage">
+            </div>
+            <button type="submit" class="btn btn-success mb-2 bg-dark text-white">Post</button>
+        </form>
+    </div>
+</div>
+
+<div class="container">
+  <!-- Sorting Dropdown -->
+  <div class="dropdown mb-3">
+      <button class="btn btn-primary dropdown-toggle" type="button" id="sortDropdown" data-bs-toggle="dropdown">
+          Sort by
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="sortDropdown">
+          <li><a class="dropdown-item" href="#">Newest</a></li>
+          <li><a class="dropdown-item" href="#">Oldest</a></li>
+          <li><a class="dropdown-item" href="#">Most Popular</a></li>
+      </ul>
+  </div>
+</div>
+  <!-- Posts -->
+  <div class="container text-white mb-4">
+    <div class="row justify-content-center">
+      <div class="card bg-primary m-1">
+        <h3 class="card-title">Halloween Toaster</h3>
+        <p><img src="../images/profile-pictures/a0d7d86f-9157-4fbe-be40-31e76765585b.png"
+            class="rounded-circle mh-100 border border-3 profile-pictures"  alt="profile image"> Jedi-Toaster</p>
+        <img src="../images/feed-images/d1031791-19ab-498e-b9fd-d4b324f2d8c8.png" class="card-img-top" alt="post img">
+        <div class="card-body">
+          <p class="card-text overflow-hidden post-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum nemo et consequatur aut, earum distinctio ab modi architecto voluptatem neque eos consequuntur ipsam. Dignissimos fuga vel ipsa repudiandae nihil eos. </p>
+        </div>
+        <div class="d-flex flex-row justify-content-evenly mb-3">
+          <div class="p-2">⇧ 13</div>
+          <div class="p-2">🗨 22</div>
+          <div class="p-2">26/10/23</div>
+        </div>
+      </div>
+      <div class="card bg-primary m-1">
+        <h3 class="card-title">Post title</h3>
+        <p><img src="../images/profile-pictures/G4V79ZCaxvp0l7BVQRBEA.png" class="rounded-circle mh-100 border border-3 profile-pictures"
+           alt="profile image"> Toasterlover69</p>
+        <img src="../images/feed-images/GtZAO_Os5VBWTWa_NxDUY.png" class="card-img-top" alt="post img">
+        <div class="card-body">
+          <p class="card-text overflow-hidden post-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea atque libero nesciunt explicabo, labore perferendis tempore ipsam cum expedita, modi distinctio enim saepe cupiditate, suscipit nemo! Cumque repellat aperiam fugit! lo</p>
+        </div>
+        <div class="d-flex flex-row justify-content-evenly mb-3">
+          <div class="p-2">⇧ 63</div>
+          <div class="p-2">🗨 28</div>
+          <div class="p-2">25/10/23</div>
+        </div>
+      </div>
+      <div class="card bg-primary m-1">
+        <h3 class="card-title">Post title</h3>
+        <p><img src="../images/profile-pictures/vcErUJ5hLXMijv8SnFPR3.png" class="rounded-circle mh-100 border border-3 profile-pictures"
+           alt="profile image"> John Toast</p>
+        <img src="../images/feed-images/0e2704e4-b334-4519-8460-b391e3227874.png" class="card-img-top" alt="post img">
+        <div class="card-body">
+          <p class="card-text overflow-hidden post-text">Short post text.</p>
+        </div>
+        <div class="d-flex flex-row justify-content-evenly mb-3">
+          <div class="p-2">⇧ 145</div>
+          <div class="p-2">🗨 66</div>
+          <div class="p-2">24/10/23</div>
+        </div>
+      </div>
+      <div class="card bg-primary m-1">
+        <h3 class="card-title">Post title</h3>
+        <p><img src="../images/profile-pictures/default-profile.jpg" class="rounded-circle mh-100 border border-3 profile-pictures"
+           alt="profile image"> MasterBlaster</p>
+        <img src="../images/feed-images/f38fc8d5-7d31-4a1b-b7ab-4f548230149a.png" class="card-img-top" alt="post img">
+        <div class="card-body">
+          <p class="card-text overflow-hidden post-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam consequuntur ex illum vel voluptate at quos, repellat est nisi provident ipsam illo facere sint debitis, sit corporis voluptas cum commodi?</p>
+        </div>
+        <div class="d-flex flex-row justify-content-evenly mb-3">
+          <div class="p-2">⇧ 55</div>
+          <div class="p-2">🗨 37</div>
+          <div class="p-2">21/10/23</div>
+        </div>
+      </div>
+      <div class="card bg-primary m-1">
+        <h3 class="card-title">Post title</h3>
+        <p><img src="../images/profile-pictures/vcErUJ5hLXMijv8SnFPR3.png" class="rounded-circle mh-100 border border-3 profile-pictures"
+           alt="profile image"> John Toast</p>
+        <img src="../images/feed-images/bRYTQkOCIchpaZNZW6AjW.png" class="card-img-top" alt="post img">
+        <div class="card-body">
+          <p class="card-text overflow-hidden post-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro laudantium vel, quo ad quis sunt? Nam fugiat dicta incidunt praesentium soluta nisi enim voluptatem assumenda corporis pariatur, perspiciatis quas minima?.</p>
+        </div>
+        <div class="d-flex flex-row justify-content-evenly mb-3">
+          <div class="p-2">⇧ 45</div>
+          <div class="p-2">🗨 38</div>
+          <div class="p-2">20/10/23</div>
+        </div>
+      </div>
+      <div class="card bg-primary m-1">
+        <h3 class="card-title">Post title</h3>
+        <p><img src="../images/profile-pictures/G4V79ZCaxvp0l7BVQRBEA.png" class="rounded-circle mh-100 border border-3 profile-pictures"
+           alt="profile image"> Toasterlover69</p>
+        <img src="../images/feed-images/Ox-CGEakRP2psMkGXUyBj.png" class="card-img-top" alt="post img">
+        <div class="card-body">
+          <p class="card-text overflow-hidden post-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam modi eaque iure accusamus! Consectetur qui ut corrupti, repellat voluptatum cum quibusdam repudiandae, quam commodi quas eum animi ducimus esse veritatis.</p>
+        </div>
+        <div class="d-flex flex-row justify-content-evenly mb-3">
+          <div class="p-2">⇧ 14</div>
+          <div class="p-2">🗨 23</div>
+          <div class="p-2">20/10/23</div>
+        </div>
+      </div>
+      <div class="card bg-primary m-1">
+        <h3 class="card-title">Post title</h3>
+        <p><img src="../images/profile-pictures/a0d7d86f-9157-4fbe-be40-31e76765585b.png"
+            class="rounded-circle mh-100 border border-3 profile-pictures" alt="profile image"> Jedi-Toaster</p>
+        <img src="../images/feed-images/pfClHiE6b3F177-eJec3x.png" class="card-img-top" alt="post img">
+        <div class="card-body">
+          <p class="card-text overflow-hidden post-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse nulla assumenda, rerum praesentium, aliquid quidem explicabo sunt hic laborum, sapiente voluptates pariatur laudantium sit adipisci fugiat temporibus aut perferendis! Numquam?</p>
+        </div>
+        <div class="d-flex flex-row justify-content-evenly mb-3">
+          <div class="p-2">⇧ 13</div>
+          <div class="p-2">🗨 22</div>
+          <div class="p-2">19/10/23</div>
+        </div>
+      </div>
+      <div class="card bg-primary m-1">
+        <h3 class="card-title">Post title</h3>
+        <p><img src="../images/profile-pictures/G4V79ZCaxvp0l7BVQRBEA.png" class="rounded-circle mh-100 border border-3 profile-pictures"
+           alt="profile image"> Toasterlover69</p>
+        <img src="../images/feed-images/RsRvT9f06bjUPUzx6yUcY.png" class="card-img-top" alt="post img">
+        <div class="card-body">
+          <p class="card-text overflow-hidden post-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam deleniti eos expedita, facilis culpa eaque veritatis? Repudiandae asperiores, voluptatem sequi molestias facilis cumque cupiditate debitis unde. Accusamus nisi quo eligendi.</p>
+        </div>
+        <div class="d-flex flex-row justify-content-evenly mb-3">
+          <div class="p-2">⇧ 86</div>
+          <div class="p-2">🗨 42</div>
+          <div class="p-2">18/10/23</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script defer type="module" src="../JS/index.js"></script>
+</body>
+
+</html>
